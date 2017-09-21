@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/navigation_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/azz"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/navigation_protocol_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/navigation_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="京东协议"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation_protocol"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/navigation_disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/navigation_disagree"
+                />
+
+            <Button
+                android:id="@+id/navigation_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/navigation_consent"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigation_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/navigation_vocality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/navigation_select_vocality"
+            />
+
+        <bwie.com.jingdong.widget.WidgetNavigationVideo
+            android:id="@+id/navigation_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/navigation_jump_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ao"
+                android:gravity="center"
+                android:text="10秒"
+                />
+
+            <TextView
+                android:id="@+id/navigation_jump"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/att"
+                android:gravity="center"
+                android:text="点击跳过"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

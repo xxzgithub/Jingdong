@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp"
+    >
+
+    <bwie.com.jingdong.widget.CustomLoginTitleBar
+        android:id="@+id/title_bar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleColor="#000"
+        app:titleContext="手机快速注册"
+        app:titleImgLeft="@mipmap/ahs"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_bg_shape"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:drawableEnd="@mipmap/aqf"
+            android:drawablePadding="5dp"
+            android:text="+86"
+            />
+
+        <bwie.com.jingdong.widget.CustomEditText
+            android:id="@+id/et_phone_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColorHint="#9c9c9c"
+            android:textCursorDrawable="@drawable/et_cursor_color_size"
+            />
+        <!-- <EditText
+             android:id="@+id/et_phone_register"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@null"
+             />
+
+         <ImageView
+             android:id="@+id/img_clear_register"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginEnd="5dp"
+             android:src="@mipmap/a9y"
+             android:visibility="invisible"
+             />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_bg_shape"
+        android:orientation="horizontal"
+        >
+
+        <bwie.com.jingdong.widget.CustomEditText
+            android:id="@+id/et_verify_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableEnd="@mipmap/line"
+            android:drawablePadding="10dp"
+            android:hint="请输入图片验证码"
+            android:maxLines="1"
+            android:textColorHint="#9c9c9c"
+            android:textCursorDrawable="@drawable/et_cursor_color_size"
+            />
+        <!-- <EditText
+             android:id="@+id/et_verify_register"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginStart="10dp"
+             android:layout_weight="1"
+             android:background="@null"
+             android:drawableEnd="@mipmap/line"
+             android:drawablePadding="10dp"
+             android:hint="请输入图片验证码"
+             android:textColorHint="#9c9c9c"
+             />-->
+
+        <ImageView
+            android:id="@+id/img_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:enabled="false"
+        android:text="下一步"
+        android:textColor="#fff"
+        />
+
+    <ImageView
+        android:id="@+id/register_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/app_loading_logo"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遇到问题?您可以"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="联系客服"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

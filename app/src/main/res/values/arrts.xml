@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomLoginTitleBar">
+        <attr name="titleContext" format="string"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleImgLeft" format="reference"/>
+    </declare-styleable>
+</resources>
